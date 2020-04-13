@@ -1,4 +1,0 @@
-.red {
-    composes : large from "@bit/onino-js.css-primitives.utils.measuresmodule";
-    color : red;
-  }
