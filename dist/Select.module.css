@@ -1,0 +1,104 @@
+@value _primary: #1890ff;
+@value _primary_light: #89c5fc;
+@value _primary_dark: #003b6e;
+@value _secondary: #FFFFFF;
+@value _height: 40px;
+
+.select-css {
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: visible;
+  color: _secondary;
+  background-color: _primary;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.select-button {
+  display: flex;
+  flex: 1;
+  height: _height;
+  line-height: _height;
+  margin-left: 10px;
+}
+
+.arrow {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+.arrow-collapsed {
+  transform: rotate(180deg);
+}
+
+.arrow-container {
+  width: _height;
+  height: _height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cross-container {
+  height: _height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: _height;
+  line-height: _height;
+  background-color: _primary;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.option.selected {
+  background-color: _primary_dark;
+}
+
+.option:hover {
+  background-color: _primary_dark;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+.options-container:last-child {
+  margin-bottom: 5px;
+}
+
+.collapsed {
+  height: 0px;
+  overflow: hidden;
+}
+
+.delete {
+  content: "X";
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 5px;
+}
+  
+  @media (max-width: 400px) {
+    .select-css {
+      width: 100% !important;
+      margin: 0.4em auto;
+    }
+  }

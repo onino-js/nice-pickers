@@ -1,0 +1,69 @@
+{
+  "name": "@bit/bit.envs.compilers.typescript",
+  "version": "3.1.17",
+  "homepage": "https://bit.dev/bit/envs/compilers/typescript",
+  "main": "dist/ts-compiler/src/index.js",
+  "dependencies": {
+    "execa": "^2.0.4",
+    "fs-extra": "8.1.0",
+    "md5": "2.2.1",
+    "recursive-readdir": "^2.2.2",
+    "typescript": "3.7.3",
+    "vinyl": "^2.2.0",
+    "lodash": "^4.17.15",
+    "chai": "4.2.0",
+    "rimraf": "3.0.0",
+    "sinon": "7.5.0",
+    "@types/recursive-readdir": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/recursive-readdir": "^2.2.0",
+    "@types/vinyl": "^2.0.3",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.7.4",
+    "@types/mocha": "^5.2.7",
+    "bit-bin": "14.6.0"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.11": {
+          "rawConfig": {
+            "tsconfig": {
+              "compilerOptions": {
+                "target": "ES5",
+                "module": "CommonJS",
+                "skipLibCheck": true
+              }
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            }
+          },
+          "options": {},
+          "files": {}
+        }
+      }
+    },
+    "overrides": {
+      "dependencies": {
+        "@types/recursive-readdir": "+",
+        "recursive-readdir": "+",
+        "bit-bin": "-"
+      },
+      "devDependencies": {
+        "@types/node": "+",
+        "@types/mocha": "^5.2.7",
+        "bit-bin": "14.6.0"
+      }
+    }
+  }
+}

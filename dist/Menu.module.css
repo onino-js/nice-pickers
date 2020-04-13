@@ -1,0 +1,50 @@
+@value _primary: #1890ff;
+@value _primary_light: #89c5fc;
+@value _primary_dark: #003b6e;
+@value _secondary: #FFFFFF;
+@value _height: 40px;
+
+.container{
+  height: auto;
+  position: relative;
+  color: _secondary;
+  background-color: _primary;
+  margin: 0px;
+  cursor: pointer;
+  padding : 5px;
+}
+
+.item {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: _height;
+  line-height: _height;
+  background-color: _primary;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.item:first-child {
+  margin-top: 0px;
+}
+
+.item.selected {
+  background-color: _primary_dark;
+}
+
+/* .item.selected {
+  border-left : 5px solid _primary_dark;
+} */
+
+.item:hover {
+  background-color: _primary_dark;
+}
+/* 
+  @media (max-width: 400px) {
+    .select-css {
+      width: 100% !important;
+      margin: 0.4em auto;
+    }
+  } */

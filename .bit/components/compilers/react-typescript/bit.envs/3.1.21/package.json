@@ -1,0 +1,54 @@
+{
+  "name": "@bit/bit.envs.compilers.react-typescript",
+  "version": "3.1.21",
+  "homepage": "https://bit.dev/bit/envs/compilers/react-typescript",
+  "main": "dist/react-typescript/src/index.js",
+  "dependencies": {
+    "bit-bin": "14.4.4-dev.8",
+    "chai": "4.2.0",
+    "fs-extra": "8.1.0",
+    "recursive-readdir": "^2.2.2",
+    "rimraf": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.4",
+    "@types/recursive-readdir": "^2.2.0"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.11": {
+          "rawConfig": {
+            "tsconfig": {
+              "compilerOptions": {
+                "target": "ES5",
+                "module": "CommonJS",
+                "skipLibCheck": true
+              }
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            }
+          },
+          "options": {},
+          "files": {}
+        }
+      }
+    },
+    "overrides": {
+      "devDependencies": {
+        "@types/mocha": "^5.2.7",
+        "@types/node": "+"
+      }
+    }
+  }
+}

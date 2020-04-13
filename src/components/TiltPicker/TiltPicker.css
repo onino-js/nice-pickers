@@ -1,0 +1,47 @@
+.tile-picker svg {
+  width: 100%; }
+
+.tile-picker text {
+  fill: #afafb7;
+  text-anchor: middle; }
+
+.tile-picker path {
+  stroke-width: 5px; }
+
+.tile-picker g.angles.selected {
+  fill: #009dbf;
+  opacity: 1; }
+  .tile-picker g.angles.selected text {
+    fill: #009dbf; }
+
+.tile-picker g.angles path {
+  stroke: white;
+  stroke-linejoin: round; }
+
+.tile-picker g.angles text {
+  fill: #afafb7;
+  user-select: none;
+  font-weight: 600; }
+
+.tile-picker g.angles.selected > path {
+  stroke: #009dbf; }
+
+.tile-picker circle {
+  fill: #009dbf; }
+
+.tile-picker g.angles {
+  cursor: pointer; }
+
+.tile-picker g.slider > path {
+  stroke-width: 40px;
+  stroke: white;
+  stroke-linejoin: round; }
+
+.tile-picker .slider-background {
+  cursor: pointer; }
+
+.tile-picker .slider-dot {
+  cursor: grab;
+  stroke: #009dbf;
+  fill: #009dbf;
+  stroke-width: 3px; }

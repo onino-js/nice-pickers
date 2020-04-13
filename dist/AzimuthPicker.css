@@ -1,0 +1,35 @@
+.cardinal-point-picker svg {
+  width: 100%; }
+
+.cardinal-point-picker .orientation-selector circle {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 40px;
+  cursor: pointer; }
+
+.cardinal-point-picker .orientation-selector path {
+  fill: #009dbf;
+  stroke: #009dbf;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  cursor: grab; }
+
+.cardinal-point-picker .orientation-selector .arrow-right {
+  fill: #009dbf;
+  stroke: none; }
+
+.cardinal-point-picker .arrow {
+  cursor: pointer; }
+
+.cardinal-point-picker .orientation-selector text {
+  fill: #afafb7;
+  text-anchor: middle;
+  font-weight: 500;
+  font-size: 14px; }
+  .cardinal-point-picker .orientation-selector text.selected {
+    fill: #009dbf; }
+
+.cardinal-point-picker text {
+  fill: #afafb7;
+  cursor: pointer;
+  user-select: none; }

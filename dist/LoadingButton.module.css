@@ -1,0 +1,98 @@
+@value _primary: #1890ff;
+@value _secondary: #002766;
+@value _success: #52c41a;
+@value _warning: #fadb14;
+@value _danger: #f5222d;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 3em;
+  width: auto;
+  padding: 0em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border: none;
+  outline: none;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  transition: width 2s, height 2s, transform 2s;
+  cursor: pointer;
+}
+
+.spin-container {
+  display: inline-block;
+  width: 0em;
+  height: auto;
+  transition: width 0.5s;
+}
+
+.spin {
+  width: 0em;
+  height: 0em;
+  opacity: 0;
+  transition: width 0s, height 0s, opacity 0s;
+}
+
+.spin-container.active {
+  width: 1em;
+  margin-right: 0.3em;
+  margin-left: 1em;
+}
+
+.spin.active {
+  width: 1em;
+  height: 1em;
+  opacity: 1;
+  margin: 0px auto;
+  border: 3px solid #ffffff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s, opacity 0.5s;
+  /* transition-delay: 0.2s; */
+  animation: spin 2s linear infinite;
+}
+
+.primary {
+  background-color: _primary;
+}
+
+.secondary {
+  background-color: _secondary;
+}
+
+.warning {
+  background-color: _warning;
+}
+
+.danger {
+  background-color: _danger;
+}
+
+.success {
+  background-color: _success;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

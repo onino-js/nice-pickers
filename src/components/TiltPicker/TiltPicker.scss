@@ -1,0 +1,70 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/measures";
+
+.tile-picker {
+
+  svg {
+    width: 100%;
+  }
+
+  text {
+    fill:$secondary-font;
+    text-anchor: middle;
+  }
+
+  path {
+    stroke-width: 5px;
+  }
+
+  g.angles.selected {
+    fill: $primary;
+
+    text {
+      fill: $primary;
+    }
+
+    opacity: 1;
+  }
+
+  g.angles {
+    path {
+      stroke: white;
+      stroke-linejoin: round;
+    }
+
+    text {
+      fill:$secondary-font;
+      user-select: none;
+      font-weight: 600;
+    }
+  }
+
+  g.angles.selected > path {
+    stroke: $primary;
+  }
+
+  circle {
+    fill: $primary;
+  }
+
+  g.angles {
+    cursor: pointer;
+  }
+
+  g.slider > path {
+    stroke-width: 40px;
+    stroke: white;
+    stroke-linejoin: round;
+  }
+
+  .slider-background {
+    cursor: pointer;
+  }
+
+  .slider-dot {
+    cursor: grab;
+    stroke: $primary;
+    fill:  $primary;
+    stroke-width: 3px;
+  }
+}

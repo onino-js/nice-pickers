@@ -1,0 +1,4 @@
+.red {
+    composes : large from "./../measures.module.css";
+    color : red;
+  }
