@@ -10,7 +10,7 @@
     "recursive-readdir": "^2.2.2",
     "typescript": "3.7.3",
     "vinyl": "^2.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "chai": "4.2.0",
     "rimraf": "3.0.0",
     "sinon": "7.5.0",
